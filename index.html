@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2ManyPJs</title>
-    <!-- Load Google Fonts properly -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
     <style>
         body {
-            margin: 0; /* Remove default body margin */
-            font-family: 'Share Tech', sans-serif; 
-            background-color: #060606; /* Fallback background colour */
-            background-image: url('2manypjs_andy_main.png'); /* Path to your background image */
-            background-size: auto; /* Cover the entire viewport */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat;  /* Prevent image repetition */
-            display: flex; /* For vertical and horizontal centering of content */
+            margin: 0;
+            font-family: 'Share Tech', sans-serif;
+            background-color: #060606;
+            background-image: url('2manypjs_andy_main.png');
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
             justify-content: center;
             align-items: flex-start;
-            min-height: 100vh; /* Ensure full viewport height */
-            padding-top: 20px; 
+            min-height: 100vh;
+            padding-top: 20px;
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-            width: 50%;              /* Make it wide — adjust as needed */
-            max-width: 1000px;       /* Prevent it from getting too wide on big screens */
-            height: 170px;           /* Make it thinner — adjust as needed */
-            padding: 10px 20px;      /* Reduce vertical padding */
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 90%; /* Start with a percentage for flexibility */
+            max-width: 1000px;  /* Keep a max width */
+            min-height: auto; /* Important:  Allow height to adjust to content */
+            padding: 10px 20px;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;          /* Center it horizontally if not using flex */
+            margin: 0 auto;
         }
 
         h1 {
@@ -46,9 +45,9 @@
             font-size: 1.1em;
             color: #555;
             margin-bottom: 20px;
+            line-height: 1.4; /* Improve line height for readability */
         }
 
-        /* Optional: Style for a link if you add one */
         a {
             color: #0078d7;
             text-decoration: none;
@@ -57,6 +56,27 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Media query for smaller screens (e.g., phones) */
+        @media screen and (max-width: 768px) {
+            body {
+                background-size: cover; /* Use cover on small screens */
+                padding-top: 10px;  /* Adjust padding for smaller screens */
+            }
+
+            .container {
+                width: 95%; /* Take up most of the screen width on small devices */
+                padding: 15px; /* Adjust padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 1.75em; /* Smaller heading on mobile */
+            }
+
+            p {
+                font-size: 1em; /* Smaller text on mobile */
+            }
+        }
     </style>
 </head>
 <body>
@@ -64,7 +84,7 @@
         <h1>2ManyPJs</h1>
         <p>T-Rex Tunes. Muppet Mixes.</p>
         <p><a href="https://www.mixcloud.com/2manypjs/" target="_blank">Visit us on MixCloud</a></p>
-        <p>Book us. Go on. Please. It'll be fun. Probably... muppets@2manypjs.com</p>
-        </div>
+        <p>Book us. Go on. Please. It'll be fun...probably. muppets@2manypjs.com</p>
+    </div>
 </body>
 </html>
